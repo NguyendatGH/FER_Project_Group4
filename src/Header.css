@@ -1,0 +1,141 @@
+.header {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+.header-top {
+  background: #000;
+  color: #fff;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  min-height: 32px;
+}
+.header-sale {
+  letter-spacing: 0.2px;
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+}
+.header-shopnow {
+  color: #fff;
+  text-decoration: underline;
+  margin-left: 4px;
+  font-weight: 600;
+}
+.header-lang {
+  cursor: pointer;
+  position: absolute;
+  right: 8vw;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  font-weight: 500;
+}
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 8vw;
+}
+.header-logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.header-nav {
+  display: flex;
+  gap: 32px;
+}
+.header-link {
+  color: #222;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.header-link:hover {
+  color: #db4444;
+}
+.header-search-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.header-search-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background: #fff;
+  overflow: hidden;
+}
+.header-search {
+  border: none;
+  outline: none;
+  padding: 6px 12px;
+  font-size: 15px;
+  width: 180px;
+  background: transparent;
+}
+.header-search-btn {
+  background: none;
+  border: none;
+  padding: 0 10px 0 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.header-search-btn svg {
+  display: block;
+  stroke: #222;
+  transition: stroke 0.2s;
+}
+.header-search-btn:hover svg {
+  stroke: #db4444;
+}
+.header-icon-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  margin-left: 18px;
+  cursor: pointer;
+  transition: filter 0.2s;
+  filter: grayscale(0);
+}
+.header-icon-img:hover {
+  filter: brightness(0) saturate(100%) invert(24%) sepia(92%) saturate(7490%) hue-rotate(352deg) brightness(97%) contrast(101%);
+}
+.header-icon-badge-wrap {
+  position: relative;
+  display: inline-block;
+  margin-left: 18px;
+}
+.header-badge {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  background: #db4444;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 50%;
+  min-width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(219,68,68,0.15);
+  z-index: 2;
+  pointer-events: none;
+} 
