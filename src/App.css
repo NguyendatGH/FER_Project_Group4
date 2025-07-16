@@ -1,38 +1,75 @@
 .App {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.move-all-btn {
+  padding: 10px 16px;
+  margin-bottom: 20px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.wishlist-item {
+  background: #f9f9f9;
+  padding: 16px;
+  border-radius: 12px;
+  position: relative;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.product-image {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.discount {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: red;
   color: white;
+  padding: 2px 8px;
+  font-size: 12px;
+  border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+.remove-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.price {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.sale {
+  color: red;
+  font-weight: bold;
+}
+
+.original {
+  text-decoration: line-through;
+  color: gray;
 }
