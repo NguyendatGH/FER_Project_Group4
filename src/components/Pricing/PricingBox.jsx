@@ -19,7 +19,7 @@ const PricingBox = ({ price, duration, packageName, subtitle, children }) => {
           </button>
         </div>
         <div>{children}</div>
-        <div className="background-shape">
+        <div className="background-shape pricing">
           <svg
             width="179"
             height="158"

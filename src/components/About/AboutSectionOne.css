@@ -32,17 +32,6 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-@media (min-width: 768px) {
-  .section-content {
-    padding-bottom: 5rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .section-content {
-    padding-bottom: 7rem;
-  }
-}
 
 .flex-wrap {
   display: flex;
