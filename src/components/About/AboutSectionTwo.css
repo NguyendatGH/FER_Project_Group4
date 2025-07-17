@@ -1,0 +1,163 @@
+.about-section-two {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .about-section-two {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-section-two {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 1400px;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-right: -16px;
+  align-items: center;
+}
+
+.image-column,
+.content-column {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (min-width: 992px) {
+  .image-column,
+  .content-column {
+    width: 50%;
+  }
+}
+
+.image-wrapper {
+  position: relative;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 96%; /* 24/25 * 100 for aspect ratio 25/24 */
+  text-align: center;
+  margin-bottom: 3rem;
+  animation: fadeInUp 0.5s ease-in-out;
+  animation-delay: 0.15s;
+  animation-fill-mode: both;
+}
+
+@media (min-width: 992px) {
+  .image-wrapper {
+    margin-bottom: 0;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+}
+
+.light-image {
+  display: block;
+}
+
+.dark-image {
+  display: none;
+}
+
+.dark .light-image {
+  display: none;
+}
+
+.dark .dark-image {
+  display: block;
+  filter: none;
+}
+
+.content-wrapper {
+  max-width: 470px;
+  animation: fadeInUp 0.5s ease-in-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}
+
+.feature-item {
+  margin-bottom: 2.25rem;
+}
+
+.feature-item:last-child {
+  margin-bottom: 0.25rem;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #121723;
+  margin-bottom: 1rem;
+}
+
+.dark .feature-title {
+  color: #FFFFFF;
+}
+
+@media (min-width: 576px) {
+  .feature-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .feature-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feature-title {
+    font-size: 1.5rem;
+  }
+}
+
+.feature-text {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #788293;
+}
+
+@media (min-width: 576px) {
+  .feature-text {
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+}

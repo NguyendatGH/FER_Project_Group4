@@ -1,0 +1,119 @@
+.w-full {
+  width: 100%;
+}
+
+.pricing-card {
+  position: relative;
+  z-index: 10;
+  background-color: #FFFFFF;
+  padding: 2.5rem 2rem;
+  border-radius: 0.125rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  animation: fadeInUp 0.5s ease-in-out;
+  animation-delay: 0.1s;
+  animation-fill-mode: both;
+}
+
+.pricing-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.dark .pricing-card {
+  background-color: #1E232E;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.dark .pricing-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pricing-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #121723;
+}
+
+.dark .price {
+  color: #FFFFFF;
+}
+
+.amount {
+  display: inline;
+}
+
+.time {
+  color: #788293;
+}
+
+.package-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #121723;
+}
+
+.dark .package-name {
+  color: #FFFFFF;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #788293;
+  margin-bottom: 1.75rem;
+}
+
+.action-section {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(120, 130, 147, 0.1);
+}
+
+.dark .action-section {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.trial-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #4A6CF7;
+  border-radius: 0.125rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.trial-button:hover {
+  background-color: rgba(74, 108, 247, 0.8);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.background-shape {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
