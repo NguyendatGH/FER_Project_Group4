@@ -1,8 +1,8 @@
-.w-full {
+.feature-item{
   width: 100%;
 }
 
-.content-wrapper {
+.feature-item-wrapper {
   animation: fadeInUp 0.5s ease-in-out;
   animation-delay: 0.15s;
   animation-fill-mode: both;
@@ -19,7 +19,7 @@
   }
 }
 
-.icon-container {
+.feat-icon-container {
   display: flex;
   align-items: center;
   justify-content: center;

@@ -16,7 +16,9 @@
 
 .contact-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  /* flex-wrap: wrap; */
   margin: 0 -1rem;
 }
 

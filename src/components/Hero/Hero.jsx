@@ -1,42 +1,41 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Hero.css';
+import React from "react";
+import { Link } from "react-router-dom";
+
 
 const Hero = () => {
   return (
     <>
       <section id="home" className="hero-section">
-        <div className="container">
-          <div className="flex-wrap">
-            <div className="w-full">
-              <div className="content-wrapper-hero">
-                <h1 className="hero-title">
-                  Free and Open-Source Next.js Template for Startup & SaaS
-                </h1>
-                <p className="hero-text">
-                  Startup is free Next.js template for startups and SaaS
-                  business websites comes with all the essential pages,
-                  components, and sections you need to launch a complete
-                  business website, built-with Next 13.x and Tailwind CSS.
-                </p>
-                <div className="button-group">
-                  <Link
-                    to="https://nextjstemplates.com/templates/saas-starter-startup"
-                    className="primary-button"
-                  >
-                    🔥 Get Pro
-                  </Link>
-                  <Link
-                    to="https://github.com/NextJSTemplates/startup-nextjs"
-                    className="github-button"
-                  >
-                    Star on GitHub
-                  </Link>
-                </div>
+        {/* <div className="container"> */}
+          <div className="hero-wrapper">
+            <div className="content-wrapper-hero">
+              <h1 className="hero-title">
+                Free and Open-Source Next.js Template for Startup & SaaS
+              </h1>
+              <p className="hero-text">
+                Startup is free Next.js template for startups and SaaS business
+                websites comes with all the essential pages, components, and
+                sections you need to launch a complete business website,
+                built-with Next 13.x and Tailwind CSS.
+              </p>
+              <div className="button-group">
+                <Link
+                  to="https://nextjstemplates.com/templates/saas-starter-startup"
+                  className="primary-button"
+                >
+                  🔥 Get Pro
+                </Link>
+                <Link
+                  to="https://github.com/NextJSTemplates/startup-nextjs"
+                  className="github-button"
+                >
+                  Star on GitHub
+                </Link>
               </div>
             </div>
           </div>
-        </div>
+        {/* </div> */}
+
         <div className="svg-right">
           <svg
             width="450"

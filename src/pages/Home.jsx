@@ -9,7 +9,7 @@ import AboutSectionTwo from "../components/About/AboutSectionTwo";
 import Testimonials from "../components/Testimonials/Testimonials";
 import Pricing from "../components/Pricing/Pricing";
 import Blog from "../components/Blog/Blog";
-
+import "../css/home.css";
 const Home = () => {
   return (
     <>
@@ -22,7 +22,7 @@ const Home = () => {
       <AboutSectionTwo />
       <Testimonials />
       <Pricing />
-      <Blog/>
+      <Blog />
       <Contact />
     </>
   );

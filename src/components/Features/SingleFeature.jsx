@@ -4,9 +4,9 @@ import './SingleFeature.css';
 const SingleFeature = ({ feature }) => {
   const { icon, title, paragraph } = feature;
   return (
-    <div className="w-full">
-      <div className="content-wrapper">
-        <div className="icon-container">
+    <div className="feature-item">
+      <div className="feature-item-wrapper">
+        <div className="feat-icon-container">
           {icon}
         </div>
         <h3 className="feature-title">

@@ -2,7 +2,7 @@ import React from 'react';
 import SectionTitle from '../Common/SectionTitle';
 import SingleFeature from './SingleFeature';
 import featuresData from './featuresData';
-import './Features.css';
+
 
 const Features = () => {
   return (
