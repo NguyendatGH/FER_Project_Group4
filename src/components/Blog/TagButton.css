@@ -1,28 +1,23 @@
 .tag-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem 1rem;
-  margin-right: 0.75rem;
-  margin-bottom: 0.75rem;
+  display: inline-block;
+  padding: 8px 16px;
+  background: #e2e8f0;
+  color: #475569;
+  border-radius: 20px;
   font-size: 0.875rem;
-  color: #121723;
-  background-color: #F0F2F9;
-  border-radius: 0.125rem;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
 }
 
 .tag-button:hover {
-  background-color: #4A6CF7;
-  color: #FFFFFF;
+  background: #3b82f6;
+  color: white;
+  transform: translateY(-1px);
 }
 
-.dark .tag-button {
-  background-color: #2C303B;
-  color: #FFFFFF;
-}
-
-.dark .tag-button:hover {
-  background-color: #4A6CF7;
-  color: #FFFFFF;
+.tag-button:last-child {
+  margin-right: 0;
 }

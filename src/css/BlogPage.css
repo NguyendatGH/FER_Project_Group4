@@ -1,0 +1,28 @@
+.blog-container {
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  gap: 30px;
+  padding: 40px 20px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.blog-container > div {
+     margin-bottom: 30px;
+}
+
+.blog-container > div:last-child {
+  margin-bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+  .blog-container {
+    padding: 20px 15px;
+  }
+  
+  .blog-container > div {
+    margin-bottom: 20px;
+  }
+}
