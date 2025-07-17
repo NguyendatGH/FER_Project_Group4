@@ -13,6 +13,7 @@ import "../css/home.css";
 const Home = () => {
   return (
     <>
+      {/* <Header /> */}
       <ScrollUp />
       <Hero />
       <Features />

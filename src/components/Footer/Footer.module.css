@@ -1,0 +1,141 @@
+.footerRoot {
+  background: #232733;
+  color: #bfc2c7;
+  padding: 0 0 0 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.footerMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 48px 0 32px 0;
+  gap: 32px;
+}
+
+.footerCol1 {
+  flex: 1.5;
+  min-width: 260px;
+}
+
+.logoRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.logoIcon {
+  display: flex;
+  align-items: center;
+}
+
+.logoText {
+  color: #fff;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.desc {
+  font-size: 20px;
+  margin-bottom: 28px;
+  color: #bfc2c7;
+  max-width: 420px;
+}
+
+.socials {
+  display: flex;
+  gap: 18px;
+  margin-top: 12px;
+}
+
+.socials a {
+  color: #bfc2c7;
+  font-size: 18px;
+  transition: color 0.18s, transform 0.12s;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials a:hover {
+  color: #4a6cf7;
+  transform: scale(1.15);
+}
+
+.footerCol {
+  flex: 1;
+  min-width: 180px;
+}
+
+.footerCol h4 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.footerCol ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerCol ul li {
+  margin-bottom: 14px;
+}
+
+.footerCol ul li a {
+  color: #bfc2c7;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.18s;
+}
+
+.footerCol ul li a:hover {
+  color: #4a6cf7;
+}
+
+.footerBottom {
+  border-top: 1px solid #2e3240;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  padding: 24px 0 18px 0;
+  margin-top: 18px;
+}
+
+.footer3dLogo {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 110px;
+  height: 90px;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+@media (max-width: 1000px) {
+  .footerMain {
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+    padding: 40px 24px 24px 24px;
+  }
+  .footerCol1, .footerCol {
+    min-width: 0;
+    width: 100%;
+  }
+  .footerCol {
+    margin-bottom: 18px;
+  }
+} 

@@ -32,7 +32,6 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -124,14 +123,25 @@
 .image-wrapper {
   max-width: 500px;
   position: relative;
-
   padding-bottom: 96%;
   animation: fadeInUp 0.5s ease-in-out;
   animation-delay: 0.2s;
   animation-fill-mode: both;
+
+  /* Thêm style mới */
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px 0 rgba(44,62,80,0.10), 0 1.5px 6px 0 rgba(44,62,80,0.08);
+  padding: 24px;
+  transition: box-shadow 0.18s, transform 0.18s;
 }
 .image-wrapper.section-one {
   margin-left: auto;
+}
+
+.image-wrapper:hover {
+  box-shadow: 0 16px 48px 0 rgba(44,62,80,0.16), 0 2px 8px 0 rgba(44,62,80,0.10);
+  transform: translateY(-4px) scale(1.02);
 }
 
 @media (min-width: 992px) {
@@ -149,6 +159,7 @@
   color: transparent;
   object-fit: cover;
   filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+  border-radius: 16px;
 }
 
 .light-image {
@@ -157,6 +168,11 @@
 
 .dark-image {
   display: none;
+}
+
+.dark .image-wrapper {
+  background: #232733;
+  box-shadow: 0 8px 32px 0 rgba(44,62,80,0.18), 0 1.5px 6px 0 rgba(44,62,80,0.12);
 }
 
 .dark .light-image {
