@@ -1,6 +1,6 @@
-import React from 'react';
-import SectionTitle from '../Common/SectionTitle';
-import './AboutSectionOne.css';
+import React from "react";
+import SectionTitle from "../Common/SectionTitle";
+import "./AboutSectionOne.css";
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -11,9 +11,7 @@ const checkIcon = (
 const AboutSectionOne = () => {
   const List = ({ text }) => (
     <p className="list-item">
-      <span className="list-icon">
-        {checkIcon}
-      </span>
+      <span className="list-icon">{checkIcon}</span>
       {text}
     </p>
   );
@@ -22,7 +20,9 @@ const AboutSectionOne = () => {
     <section id="about" className="about-section-one">
       <div className="container">
         <div className="section-content">
-          <div className="flex-wrap">
+          <div className="about-section-mainContent">
+            <div className="about-layout">
+
             <div className="content-column">
               <SectionTitle
                 title="Crafted for Startup, SaaS and Business Sites."
@@ -44,8 +44,11 @@ const AboutSectionOne = () => {
                 </div>
               </div>
             </div>
-            <div className="image-column">
-              <div className="image-wrapper">
+            </div>
+            <div className="about-layout">
+
+            <div className="image-column ">
+              <div className="image-wrapper section-one">
                 <img
                   src="/images/about/about-image.svg"
                   alt="about-image"
@@ -57,6 +60,7 @@ const AboutSectionOne = () => {
                   className="about-image dark-image"
                 />
               </div>
+            </div>
             </div>
           </div>
         </div>

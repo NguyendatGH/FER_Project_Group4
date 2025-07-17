@@ -1,6 +1,11 @@
 .video-section {
   position: relative;
   z-index: 10;
+  min-height: 100vh; /* Ensure section takes full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
@@ -25,29 +30,20 @@
   padding-left: 1rem;
   padding-right: 1rem;
   max-width: 1200px;
+  width: 100%;
 }
 
 .video-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -1rem;
-  margin-right: -1rem;
-}
-
-.video-container {
-  width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.video-image-wrapper {
   max-width: 770px;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
-  border-radius: 0.375rem;
+}
+
+.video-image-wrapper {
   position: relative;
   padding-bottom: 51.9481%; /* 40/77 * 100 for aspect-[77/40] */
+  overflow: hidden;
+  border-radius: 0.375rem;
   animation: fadeInUp 0.5s ease-in-out;
   animation-delay: 0.15s;
   animation-fill-mode: both;
@@ -76,7 +72,7 @@
 .play-button-wrapper {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -102,16 +98,16 @@
   background-color: #FFFFFF;
 }
 
-.background-shape {
+.background-shape-video {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
   height: 100%;
-  /* background-image: url(/images/video/shape.svg); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
+  background-image:url(../../../public/images/video/shape.svg);
 }
