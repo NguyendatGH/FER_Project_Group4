@@ -1,0 +1,28 @@
+.tag-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  margin-right: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  color: #121723;
+  background-color: #F0F2F9;
+  border-radius: 0.125rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tag-button:hover {
+  background-color: #4A6CF7;
+  color: #FFFFFF;
+}
+
+.dark .tag-button {
+  background-color: #2C303B;
+  color: #FFFFFF;
+}
+
+.dark .tag-button:hover {
+  background-color: #4A6CF7;
+  color: #FFFFFF;
+}

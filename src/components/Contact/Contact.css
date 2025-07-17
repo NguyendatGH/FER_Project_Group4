@@ -1,0 +1,134 @@
+.contact-section {
+  padding: 4rem 0;
+}
+
+@media (min-width: 768px) {
+  .contact-section {
+    padding: 5rem 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-section {
+    padding: 7rem 0;
+  }
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+.contact-left,
+.contact-right {
+  padding: 0 1rem;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .contact-left {
+    width: 58.3333%;
+  }
+  .contact-right {
+    width: 41.6667%;
+  }
+}
+
+.contact-box {
+  background: #fff;
+  padding: 3.5rem;
+  border-radius: 4px;
+  box-shadow: 0px 5px 15px rgba(6, 8, 15, 0.05); /* shadow-three */
+  margin-bottom: 3rem;
+}
+
+.contact-box.dark {
+  background: #1e232e;
+  color: #fff;
+}
+
+.contact-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #121723;
+  margin-bottom: 1rem;
+}
+
+.contact-description {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #788293;
+  margin-bottom: 3rem;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+.form-group {
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .form-group.half {
+    width: 50%;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #121723;
+}
+
+.dark label {
+  color: #fff;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #121723;
+  background: #f8f8f8;
+  border: 1px solid #e3e8ef;
+  border-radius: 4px;
+  outline: none;
+}
+
+.dark input,
+.dark textarea {
+  background: #2C303B;
+  border: none;
+  color: #959CB1;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #4A6CF7;
+}
+
+.submit-button {
+  background: #4A6CF7;
+  color: #fff;
+  padding: 1rem 2.25rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 0px 5px 20px rgba(4, 10, 34, 0.1); /* shadow-submit */
+}
+
+.submit-button:hover {
+  background: rgba(74, 108, 247, 0.9);
+}

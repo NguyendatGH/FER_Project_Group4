@@ -1,0 +1,208 @@
+.hero-section {
+            position: relative;
+            z-index: 10;
+            overflow: hidden;
+            background-color: #FFFFFF;
+            padding-bottom: 4rem;
+            padding-top: 120px;
+          }
+
+          @media (min-width: 768px) {
+            .hero-section {
+              padding-bottom: 120px;
+              padding-top: 150px;
+            }
+          }
+
+          @media (min-width: 1200px) {
+            .hero-section {
+              padding-bottom: 160px;
+              padding-top: 180px;
+            }
+          }
+
+          @media (min-width: 1400px) {
+            .hero-section {
+              padding-bottom: 200px;
+              padding-top: 210px;
+            }
+          }
+
+          .hero-section.dark {
+            background-color: #1E232E;
+          }
+
+          .container {
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            max-width: 1200px;
+          }
+
+          .flex-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -16px;
+            margin-right: -16px;
+          }
+
+          .w-full {
+            width: 100%;
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+
+          .content-wrapper-hero {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            animation: fadeInUp 0.5s ease-in-out;
+            animation-delay: 0.2s;
+            animation-fill-mode: both;
+          }
+
+          @keyframes fadeInUp {
+            from {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          .hero-title {
+            font-size: 1.875rem;
+            font-weight: 700;
+            line-height: 2.25rem;
+            color: #121723;
+            margin-bottom: 1.25rem;
+          }
+
+          .dark .hero-title {
+            color: #FFFFFF;
+          }
+
+          @media (min-width: 576px) {
+            .hero-title {
+              font-size: 2.25rem;
+              line-height: 2.5rem;
+            }
+          }
+
+          @media (min-width: 768px) {
+            .hero-title {
+              font-size: 3rem;
+              line-height: 3.5rem;
+            }
+          }
+
+          .hero-text {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #788293;
+            margin-bottom: 3rem;
+          }
+
+          .dark .hero-text {
+            color: #959CB1;
+          }
+
+          @media (min-width: 576px) {
+            .hero-text {
+              font-size: 1.125rem;
+            }
+          }
+
+          @media (min-width: 768px) {
+            .hero-text {
+              font-size: 1.25rem;
+            }
+          }
+
+          .button-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+          }
+
+          @media (min-width: 576px) {
+            .button-group {
+              flex-direction: row;
+              gap: 1rem;
+            }
+          }
+
+          .primary-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #FFFFFF;
+            background-color: #4A6CF7;
+            border-radius: 0.125rem;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+          }
+
+          .primary-button:hover {
+            background-color: rgba(74, 108, 247, 0.8);
+          }
+
+          .github-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #FFFFFF;
+            background-color: #121723;
+            border-radius: 0.125rem;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+          }
+
+          .github-button:hover {
+            background-color: rgba(18, 23, 35, 0.9);
+          }
+
+          .dark .github-button {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #FFFFFF;
+          }
+
+          .dark .github-button:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+          }
+
+          .svg-right {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+            opacity: 0.3;
+          }
+
+          @media (min-width: 992px) {
+            .svg-right {
+              opacity: 1;
+            }
+          }
+
+          .svg-left {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.3;
+          }
+
+          @media (min-width: 992px) {
+            .svg-left {
+              opacity: 1;
+            }
+          }
