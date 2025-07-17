@@ -17,7 +17,7 @@ const Pricing = () => {
           width="665px"
         />
         <div className="w-full">
-          <div className="toggle-wrapper">
+          <div className="toggle-center">
             <span
               onClick={() => setIsMonthly(true)}
               className={`toggle-option ${isMonthly ? 'active' : ''}`}
