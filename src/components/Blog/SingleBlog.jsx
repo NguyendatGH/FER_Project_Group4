@@ -1,19 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './SingleBlog.css';
 
 const SingleBlog = ({ blog }) => {
-  const { title, image, paragraph, author, tags, publishDate } = blog;
+  const { id, title, image, paragraph, author, tags, publishDate } = blog;
   return (
     <div className="blog-card">
-      <a href="/blog-details" className="blog-image-wrapper">
+      <Link to={`/blog/${id}`} className="blog-image-wrapper">
         <span className="tag-label">{tags[0]}</span>
         <img src={image} alt="image" className="blog-image" />
-      </a>
+      </Link>
       <div className="blog-content">
         <h3>
-          <a href="/blog-details" className="blog-title">
+          <Link to={`/blog/${id}`} className="blog-title">
             {title}
-          </a>
+          </Link>
         </h3>
         <p className="blog-paragraph">{paragraph}</p>
         <div className="blog-footer">
