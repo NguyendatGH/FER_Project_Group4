@@ -29,7 +29,7 @@ const Hero = () => {
                   to="https://github.com/NextJSTemplates/startup-nextjs"
                   className="github-button"
                 >
-                  Star on GitHub
+                  Star on GitHub repo
                 </Link>
               </div>
             </div>
