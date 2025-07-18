@@ -1,0 +1,162 @@
+.headerRoot {
+  background: #232733;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.06);
+  padding: 0 40px;
+}
+
+.logoWrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.logoText {
+  color: #fff;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 1px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: 48px;
+  gap: 8px;
+}
+
+.navLink {
+  color: #E5E7EB;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px 20px;
+  border-radius: 8px;
+  transition: background 0.18s, color 0.18s, transform 0.12s;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.navLink:hover {
+  background: #38405a;
+  color: #fff;
+}
+
+.navLink:active {
+  background: #232733;
+  color: #bfc2c7;
+  transform: scale(0.96);
+}
+
+.signIn {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 18px;
+  padding: 8px 22px;
+  border-radius: 8px;
+  transition: background 0.18s, color 0.18s, transform 0.12s;
+  font-weight: 500;
+}
+
+.signIn:hover {
+  background: #38405a;
+  color: #fff;
+}
+
+.signIn:active {
+  background: #232733;
+  color: #bfc2c7;
+  transform: scale(0.96);
+}
+
+.signUp {
+  background: #4F6FF4;
+  color: #fff;
+  border-radius: 8px;
+  padding: 12px 40px;
+  font-weight: 600;
+  font-size: 22px;
+  text-decoration: none;
+  margin-right: 18px;
+  display: inline-block;
+  transition: background 0.18s, color 0.18s, transform 0.12s;
+  box-shadow: 0 2px 8px 0 rgba(79,111,244,0.10);
+}
+
+.signUp:hover {
+  background: #3551b6;
+  color: #fff;
+}
+
+.signUp:active {
+  background: #232733;
+  color: #bfc2c7;
+  transform: scale(0.96);
+}
+
+.sunIconWrap {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s, transform 0.12s;
+}
+
+.sunIconWrap:hover {
+  background: #38405a;
+  color: #ffe066;
+  transform: scale(1.08);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  min-width: 220px;
+  background: #232733;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(44,62,80,0.18), 0 1.5px 6px 0 rgba(44,62,80,0.12);
+  padding: 18px 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInDropdown 0.18s;
+}
+
+@keyframes fadeInDropdown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.dropdownItem {
+  color: #bfc2c7;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 28px;
+  border-radius: 6px;
+  transition: background 0.16s, color 0.16s, transform 0.12s;
+  font-weight: 500;
+  margin: 0 4px;
+}
+
+.dropdownItem:hover {
+  background: #38405a;
+  color: #fff;
+  transform: translateX(4px) scale(1.04);
+} 
