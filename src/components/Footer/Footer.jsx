@@ -25,34 +25,34 @@ const Footer = () => {
           </div>
           <p className={styles.desc}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis.</p>
           <div className={styles.socials}>
-            <a href="#" aria-label="Facebook"><i className="fa-brands fa-facebook-f"></i></a>
-            <a href="#" aria-label="Twitter"><i className="fa-brands fa-twitter"></i></a>
-            <a href="#" aria-label="YouTube"><i className="fa-brands fa-youtube"></i></a>
-            <a href="#" aria-label="LinkedIn"><i className="fa-brands fa-linkedin-in"></i></a>
+            <button type="button" aria-label="Facebook"><i className="fa-brands fa-facebook-f"></i></button>
+            <button type="button" aria-label="Twitter"><i className="fa-brands fa-twitter"></i></button>
+            <button type="button" aria-label="YouTube"><i className="fa-brands fa-youtube"></i></button>
+            <button type="button" aria-label="LinkedIn"><i className="fa-brands fa-linkedin-in"></i></button>
           </div>
         </div>
         <div className={styles.footerCol}>
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">About</a></li>
+            <li><button type="button">Blog</button></li>
+            <li><button type="button">Pricing</button></li>
+            <li><button type="button">About</button></li>
           </ul>
         </div>
         <div className={styles.footerCol}>
           <h4>Terms</h4>
           <ul>
-            <li><a href="#">TOS</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Refund Policy</a></li>
+            <li><button type="button">TOS</button></li>
+            <li><button type="button">Privacy Policy</button></li>
+            <li><button type="button">Refund Policy</button></li>
           </ul>
         </div>
         <div className={styles.footerCol}>
           <h4>Support & Help</h4>
           <ul>
-            <li><a href="#">Open Support Ticket</a></li>
-            <li><a href="#">Terms of Use</a></li>
-            <li><a href="#">About</a></li>
+            <li><button type="button">Open Support Ticket</button></li>
+            <li><button type="button">Terms of Use</button></li>
+            <li><button type="button">About</button></li>
           </ul>
         </div>
       </div>

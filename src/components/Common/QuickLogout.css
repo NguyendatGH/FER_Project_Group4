@@ -1,0 +1,89 @@
+.quick-logout-container {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  z-index: 1000;
+  animation: slideIn 0.3s ease-out;
+}
+
+.quick-logout-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(239, 68, 68, 0.9);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.quick-logout-button:hover {
+  transform: translateY(-2px) scale(1.1);
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4);
+  background: rgba(220, 38, 38, 0.95);
+}
+
+.quick-logout-button:active {
+  transform: translateY(0);
+}
+
+.quick-logout-button svg {
+  transition: transform 0.3s ease;
+}
+
+.quick-logout-button:hover svg {
+  transform: translateX(2px);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .quick-logout-container {
+    top: 80px;
+    right: 10px;
+  }
+  
+  .quick-logout-button {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .quick-logout-button svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quick-logout-container {
+    top: 70px;
+    right: 5px;
+  }
+  
+  .quick-logout-button {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .quick-logout-button svg {
+    width: 16px;
+    height: 16px;
+  }
+} 

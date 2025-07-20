@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-  z-index: 10;
+  z-index: 1000;
   box-shadow: 0 2px 12px 0 rgba(0,0,0,0.06);
   padding: 0 40px;
 }
@@ -159,4 +159,127 @@
   background: #38405a;
   color: #fff;
   transform: translateX(4px) scale(1.04);
+}
+
+.userAvatar {
+  width: 32px;
+  height: 32px;
+  background: #4a6cf7;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.userButton:hover {
+  background: rgba(74, 108, 247, 0.1) !important;
+}
+
+.userMenu {
+  animation: fadeInDropdown 0.18s;
+}
+
+@keyframes fadeInDropdown {
+  from { 
+    opacity: 0; 
+    transform: translateY(-8px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(-10px) scale(0.95); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0) scale(1); 
+  }
+}
+
+.userMenuItem:hover {
+  background: #f9fafb !important;
+  color: #4a6cf7 !important;
+}
+
+.userDropdownMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 2px solid #4a6cf7;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  min-width: 220px;
+  z-index: 1000;
+  margin-top: 8px;
+  animation: fadeInDropdown 0.2s ease-out;
+}
+
+.userDropdownHeader {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #f8f9fa;
+}
+
+.userDropdownName {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.userDropdownEmail {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.userDropdownContent {
+  padding: 8px 0;
+}
+
+.userDropdownItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid #f3f4f6;
+  cursor: pointer;
+}
+
+.userDropdownItem:hover {
+  background-color: #f9fafb;
+}
+
+.userDropdownItem:last-child {
+  border-bottom: none;
+}
+
+.userDropdownButton {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  color: #ef4444;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.userDropdownButton:hover {
+  background-color: #fef2f2;
 } 

@@ -55,7 +55,8 @@
   margin-top: 12px;
 }
 
-.socials a {
+.socials a,
+.socials button {
   color: #bfc2c7;
   font-size: 18px;
   transition: color 0.18s, transform 0.12s;
@@ -64,9 +65,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-.socials a:hover {
+.socials a:hover,
+.socials button:hover {
   color: #4a6cf7;
   transform: scale(1.15);
 }
@@ -93,14 +98,21 @@
   margin-bottom: 14px;
 }
 
-.footerCol ul li a {
+.footerCol ul li a,
+.footerCol ul li button {
   color: #bfc2c7;
   text-decoration: none;
   font-size: 18px;
   transition: color 0.18s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
 }
 
-.footerCol ul li a:hover {
+.footerCol ul li a:hover,
+.footerCol ul li button:hover {
   color: #4a6cf7;
 }
 
