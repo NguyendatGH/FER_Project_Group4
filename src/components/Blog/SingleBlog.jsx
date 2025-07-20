@@ -8,7 +8,7 @@ const SingleBlog = ({ blog }) => {
     <div className="blog-card">
       <Link to={`/blog/${id}`} className="blog-image-wrapper">
         <span className="tag-label">{tags[0]}</span>
-        <img src={image} alt="image" className="blog-image" />
+        <img src={image} alt="" className="blog-image" />
       </Link>
       <div className="blog-content">
         <h3>

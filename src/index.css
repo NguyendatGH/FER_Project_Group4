@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Đảm bảo dropdown menu hiển thị đúng */
+.userDropdownMenu {
+  z-index: 1000 !important;
+  position: absolute !important;
+}
