@@ -10,6 +10,7 @@ import Testimonials from "../components/Testimonials/Testimonials";
 import Pricing from "../components/Pricing/Pricing";
 import Blog from "../components/Blog/Blog";
 import "../css/home.css";
+import Chatbot from "../components/chat/Chatbot";
 const Home = () => {
   return (
     <>
@@ -24,6 +25,7 @@ const Home = () => {
       <Pricing />
       <Blog />
       <Contact />
+      <Chatbot />
     </>
   );
 };
