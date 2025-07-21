@@ -1,5 +1,5 @@
 import React from 'react';
-import './SingleTestimonial.css';
+import '../../css/components/SingleTestimonial.css';
 
 const starIcon = (
   <svg width="18" height="16" viewBox="0 0 18 16" className="fill-current">

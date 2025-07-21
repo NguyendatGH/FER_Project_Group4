@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import blogData from './blogData';
-import './BlogDetails.css';
+import '../../css/blog/BlogDetails.css';
 
 
 const BlogDetails = () => {
@@ -28,6 +28,7 @@ const BlogDetails = () => {
         </div>
       </div>
       <p className="publish-date">Published on: {publishDate}</p>
+      
     </div>
   );
 };

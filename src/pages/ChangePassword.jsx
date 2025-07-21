@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import './ChangePassword.css';
+import '../css/auth/ChangePassword.css';
 
 const ChangePassword = () => {
   const { user } = useAuth();

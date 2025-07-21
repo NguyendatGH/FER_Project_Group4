@@ -26,7 +26,7 @@ const Hero = () => {
                   🔥 Get Pro
                 </Link>
                 <Link
-                  to="https://github.com/NextJSTemplates/startup-nextjs"
+                  to="https://github.com/NguyendatGH/FER_Project_Group4.git"
                   className="github-button"
                 >
                   Star on GitHub repo

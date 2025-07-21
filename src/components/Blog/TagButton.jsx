@@ -1,5 +1,5 @@
 import React from 'react';
-import './TagButton.css';
+import '../../css/blog/TagButton.css';
 
 const TagButton = ({ href = "#0", text }) => {
   return (

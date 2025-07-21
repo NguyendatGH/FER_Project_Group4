@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import SectionTitle from '../Common/SectionTitle';
 import OfferList from './OfferList';
 import PricingBox from './PricingBox';
-import './Pricing.css';
+import '../../css/components/Pricing.css';
 
 const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);

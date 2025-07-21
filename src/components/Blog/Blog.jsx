@@ -2,7 +2,7 @@ import React from 'react';
 import SectionTitle from '../Common/SectionTitle';
 import SingleBlog from './SingleBlog';
 import blogData from './blogData';
-import './Blog.css';
+import '../../css/blog/Blog.css';
 
 const Blog = () => {
   return (

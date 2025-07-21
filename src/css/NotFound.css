@@ -1,0 +1,63 @@
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1a1a2e;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.error-code {
+  font-size: 10rem;
+  font-weight: bold;
+  color: #7209b7;
+  position: relative;
+}
+
+.error-code::before {
+  content: "4";
+  color: #7209b7;
+  position: absolute;
+  left: -1.5rem;
+  top: 0;
+  z-index: -1;
+}
+
+.error-code::after {
+  content: "4";
+  color: #7209b7;
+  position: absolute;
+  right: -1.5rem;
+  top: 0;
+  z-index: -1;
+}
+
+.error-text {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #b5179e;
+}
+
+.error-subtext {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #4895ef;
+}
+
+.back-button {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #7209b7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #5a0a8d;
+}

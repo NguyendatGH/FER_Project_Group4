@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionTitle from '../Common/SectionTitle';
-import './AuthSection.css';
+import '../../css/auth/AuthSection.css';
 
 const AuthSection = ({ children, title, subtitle }) => {
   return (

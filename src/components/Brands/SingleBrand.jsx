@@ -1,5 +1,5 @@
 import React from 'react';
-import './Brands.css';
+import '../../css/components/Brands.css';
 
 const SingleBrand = ({ brand }) => {
   const { href, image, name } = brand;

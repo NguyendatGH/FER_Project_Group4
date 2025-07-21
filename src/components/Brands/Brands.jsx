@@ -1,7 +1,7 @@
 import React from 'react';
 import SingleBrand from './SingleBrand';
 import brandsData from './brandsData';
-import './Brands.css';
+import '../../css/components/Brands.css';
 
 const Brands = () => {
   return (

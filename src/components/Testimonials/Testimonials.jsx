@@ -1,7 +1,7 @@
 import React from 'react';
 import SectionTitle from '../Common/SectionTitle';
 import SingleTestimonial from './SingleTestimonial';
-import './Testimonials.css';
+import '../../css/components/Testimonials.css';
 
 const testimonialData = [
   {

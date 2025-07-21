@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTitle from "../Common/SectionTitle";
-import "./AboutSectionOne.css";
+import "../../css/components/AboutSectionOne.css";
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">

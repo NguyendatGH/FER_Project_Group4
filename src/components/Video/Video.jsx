@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import ModalVideo from "react-modal-video";
-import "./Video.css";
+import "../../css/components/Video.css";
 
 const Video = () => {
   const [isOpen, setOpen] = useState(false);

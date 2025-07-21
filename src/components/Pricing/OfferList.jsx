@@ -1,5 +1,5 @@
 import React from 'react';
-import './OfferList.css';
+import '../../css/components/OfferList.css';
 
 const checkIcon = (
   <svg width="8" height="6" viewBox="0 0 8 6" className="fill-current">

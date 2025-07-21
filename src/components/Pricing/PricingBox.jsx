@@ -1,5 +1,5 @@
 import React from 'react';
-import './PricingBox.css';
+import '../../css/components/PricingBox.css';
 
 const PricingBox = ({ price, duration, packageName, subtitle, children }) => {
   return (

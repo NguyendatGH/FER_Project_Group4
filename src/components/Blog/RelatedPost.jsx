@@ -1,5 +1,5 @@
 import React from 'react';
-import './RelatedPost.css';
+import '../../css/blog/RelatedPost.css';
 
 const RelatedPost = ({ image, slug, title, date }) => {
   return (

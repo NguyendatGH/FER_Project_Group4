@@ -1,7 +1,7 @@
 import React from 'react';
 import SingleBlog from '../components/Blog/SingleBlog';
 import blogData from '../components/Blog/blogData';
-import '../css/BlogPage.css';
+import '../css/blog/BlogPage.css';
 
 
 const BlogPage = () => {

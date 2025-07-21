@@ -1,4 +1,4 @@
-import "./Contact.css";
+import "../../css/components/Contact.css";
 const NewsLatterBox = () => {
   const gradientColor = "#4A6CF7";
 

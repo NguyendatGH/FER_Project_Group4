@@ -11,17 +11,16 @@ import SignUp from './pages/SignUp';
 import SignUpSuccess from './pages/SignUpSuccess';
 import Profile from './pages/Profile';
 import ChangePassword from './pages/ChangePassword';
-import TestPage from './pages/TestPage';
-// import QuickLogout from './components/Common/QuickLogout';
 import { AuthProvider } from './context/AuthContext';
-
+import NotFound from './pages/NotFound';
+import SupportPage from './pages/SupportPage';
 function App() {
   console.log('App component rendered');
   
   return (
     <AuthProvider>
       <Header />
-      {/* <QuickLogout /> */}
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -31,8 +30,9 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signup-success" element={<SignUpSuccess />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/support" element={<SupportPage />} />
         <Route path="/change-password" element={<ChangePassword />} />
-        <Route path="/test" element={<TestPage />} />
+        <Route path="/not-found" element={<NotFound />} />
       </Routes>
       <Footer />
     </AuthProvider>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import AuthSection from '../components/Auth/AuthSection';
-import './SignUpSuccess.css';
+import '../css/auth/SignUpSuccess.css';
 
 const SignUpSuccess = () => {
   return (

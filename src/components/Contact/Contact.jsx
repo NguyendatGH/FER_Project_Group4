@@ -1,5 +1,5 @@
 import "./NewsLatterBox";
-import "./Contact.css";
+import "../../css/components/Contact.css";
 import NewsLatterBox from "./NewsLatterBox";
 const Contact = () => {
   return (

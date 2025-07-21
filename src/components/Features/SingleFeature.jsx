@@ -1,5 +1,5 @@
 import React from 'react';
-import './SingleFeature.css';
+import '../../css/components/SingleFeature.css';
 
 const SingleFeature = ({ feature }) => {
   const { icon, title, paragraph } = feature;

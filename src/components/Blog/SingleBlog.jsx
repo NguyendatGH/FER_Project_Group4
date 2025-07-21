@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './SingleBlog.css';
+import '../../css/blog/SingleBlog.css';
 
 const SingleBlog = ({ blog }) => {
   const { id, title, image, paragraph, author, tags, publishDate } = blog;
@@ -31,6 +31,7 @@ const SingleBlog = ({ blog }) => {
             <h4 className="date-label">Date</h4>
             <p className="date-text">{publishDate}</p>
           </div>
+          
         </div>
       </div>
     </div>

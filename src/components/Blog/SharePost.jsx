@@ -1,5 +1,5 @@
 import React from 'react';
-import './SharePost.css';
+import '../../css/blog/SharePost.css';
 
 const SharePost = () => {
   return (

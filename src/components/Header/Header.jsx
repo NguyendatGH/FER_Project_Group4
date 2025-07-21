@@ -14,13 +14,12 @@ const LogoIcon = () => (
 
 const pages = [
   { name: "About Page", to: "/about" },
-  { name: "Contact Page", to: "/" },
   { name: "Blog Grid Page", to: "/blog" },
-  { name: "Blog Sidebar Page", to: "/" },
   { name: "Blog Details Page", to: "/blog/1" },
+  { name: "Support page", to: "/support" },
   { name: "Sign In Page", to: "/signin" },
   { name: "Sign Up Page", to: "/signup" },
-  { name: "Error Page", to: "/" },
+  { name: "Error Page", to: "/not-found" },
 ];
 
 const Header = () => {
@@ -73,8 +72,7 @@ const Header = () => {
         <Link to="/" className={styles.navLink}>Home</Link>
         <Link to="/about" className={styles.navLink}>About</Link>
         <Link to="/blog" className={styles.navLink}>Blog</Link>
-        <Link to="/test" className={styles.navLink}>Test</Link>
-        <Link to="/" className={styles.navLink}>Support</Link>
+        <Link to="/support" className={styles.navLink}>Support</Link>
         <div style={{ position: "relative", display: "flex", alignItems: "center" }}>
           <button
             ref={buttonRef}
