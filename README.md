@@ -71,9 +71,20 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-## to use chat ai feature
-please create .env file 
-the content should like this :
+To Use Chat AI Feature
 
+Please create a .env file
+The content should look like this:
+```
 GEMINI_API_KEY=your api key (google gemini)
 PORT=5001
+```
+
+## download dependencies:
+ ``npm i``
+## run project :  
+client :
+        ``` npm start```
+        
+server: 
+        ```node server.js```

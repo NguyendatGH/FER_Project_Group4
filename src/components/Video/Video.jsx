@@ -46,15 +46,7 @@ const Video = () => {
           </div>
         </div>
       </div>
-
-      <ModalVideo
-        channel="youtube"
-        autoplay={true}
-        start={true}
-        isOpen={isOpen}
-        videoId="L61p2uyiMSo"
-        onClose={() => setOpen(false)}
-      />
+      
       <div className="background-shape-video"></div>
     </section>
   );
