@@ -50,6 +50,8 @@ const Profile = () => {
         </div>
 
         <div className="profile-info">
+          <label>Vai trò:</label>
+          <span>{user.role === "admin" ? "Quản trị viên" : "Người dùng"}</span>
           <div className="info-group">
             <label>Họ và tên:</label>
             <span>
