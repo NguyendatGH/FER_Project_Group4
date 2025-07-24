@@ -24,8 +24,12 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const login = (userData) => {
-    setUser(userData);
-    localStorage.setItem('fer_user', JSON.stringify(userData));
+  const userWithRole = {
+      ...userData,
+      role: userData.role || 'user' 
+    };
+    setUser(userWithRole);
+    localStorage.setItem('fer_user', JSON.stringify(userWithRole));
   };
 
   const logout = () => {
