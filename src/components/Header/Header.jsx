@@ -25,8 +25,7 @@ const LogoIcon = () => (
 
 const pages = [
   { name: "About Page", to: "/about" },
-  { name: "Blog Grid Page", to: "/blog" },
-  { name: "Blog Details Page", to: "/blog/1" },
+  { name: "Blog Grid Page", to: "/blogs" },
   { name: "Support page", to: "/support" },
   { name: "Sign In Page", to: "/signin" },
   { name: "Sign Up Page", to: "/signup" },
@@ -84,7 +83,7 @@ const Header = () => {
         <Link to="/about" className={styles.navLink}>
           About
         </Link>
-        <Link to="/blog" className={styles.navLink}>
+        <Link to="/blogs" className={styles.navLink}>
           Blog
         </Link>
         <Link to="/support" className={styles.navLink}>

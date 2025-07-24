@@ -8,7 +8,6 @@ import AboutSectionOne from "../components/About/AboutSectionOne";
 import AboutSectionTwo from "../components/About/AboutSectionTwo";
 import Testimonials from "../components/Testimonials/Testimonials";
 import Pricing from "../components/Pricing/Pricing";
-import Blog from "../components/Blog/Blog";
 import "../css/home.css";
 import Chatbot from "../components/chat/Chatbot";
 const Home = () => {
@@ -23,7 +22,6 @@ const Home = () => {
       <AboutSectionTwo />
       <Testimonials />
       <Pricing />
-      <Blog />
       <Contact />
       <Chatbot />
     </>

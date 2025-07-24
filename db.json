@@ -6,7 +6,9 @@
       "password": "admin123",
       "firstName": "Admin",
       "lastName": "User",
-      "role": "admin"
+      "role": "admin",
+      "avatar": "/images/avatars/1.jpg",
+      "designation": "Head of Design"
     },
     {
       "id": 2,
@@ -14,10 +16,22 @@
       "password": "user123",
       "firstName": "Regular",
       "lastName": "User",
-      "role": "user"
+      "role": "user",
+      "avatar": "/images/avatars/2.jpg",
+      "designation": "Frontend Developer"
+    },
+    {
+      "id": 3,
+      "email": "author@example.com",
+      "password": "author123",
+      "firstName": "Content",
+      "lastName": "Author",
+      "role": "author",
+      "avatar": "/images/avatars/3.jpg",
+      "designation": "Technical Writer"
     }
   ],
-  "templates": [
+   "templates": [
     {
       "id": 1,
       "name": "Startup Landing",
@@ -137,6 +151,84 @@
       "updatedAt": "2023-11-05",
       "featured": true,
       "status": "published"
+    }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Best UI components for modern websites",
+      "paragraph": "Discover the top UI components that can elevate your website design to the next level.",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor. Nullam auctor, nisl eget ultricies tincidunt, nisl nisl aliquam nisl, eget ultricies nisl nisl eget nisl.",
+      "image": "/images/blog/blog-01.jpg",
+      "author": {
+        "name": "Admin User",
+        "image": "/images/blog/author-01.png",
+        "designation": "Head of Design"
+      },
+      "authorId": 1,
+      "tags": ["design", "ui", "components"],
+      "publishDate": "May 15, 2023",
+      "createdAt": "2023-05-15T10:30:00Z",
+      "updatedAt": "2023-05-15T10:30:00Z",
+      "views": 1250,
+      "likes": 42
+    },
+    {
+      "id": 2,
+      "title": "9 simple ways to improve your design skills",
+      "paragraph": "Practical tips and techniques to enhance your design abilities quickly and effectively.",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor. Nullam auctor, nisl eget ultricies tincidunt, nisl nisl aliquam nisl, eget ultricies nisl nisl eget nisl.",
+      "image": "/images/blog/blog-02.jpg",
+      "author": {
+        "name": "Regular User",
+        "image": "/images/blog/author-02.png",
+        "designation": "Frontend Developer"
+      },
+      "authorId": 2,
+      "tags": ["design", "tips", "improvement"],
+      "publishDate": "June 20, 2023",
+      "createdAt": "2023-06-20T14:15:00Z",
+      "updatedAt": "2023-06-22T09:45:00Z",
+      "views": 980,
+      "likes": 35
+    },
+    {
+      "id": 3,
+      "title": "Tips to quickly improve your coding speed",
+      "paragraph": "Learn how experienced developers write code faster without sacrificing quality.",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor. Nullam auctor, nisl eget ultricies tincidunt, nisl nisl aliquam nisl, eget ultricies nisl nisl eget nisl.",
+      "image": "/images/blog/blog-03.jpg",
+      "author": {
+        "name": "Content Author",
+        "image": "/images/blog/author-03.png",
+        "designation": "Technical Writer"
+      },
+      "authorId": 3,
+      "tags": ["development", "coding", "productivity"],
+      "publishDate": "July 10, 2023",
+      "createdAt": "2023-07-10T08:20:00Z",
+      "updatedAt": "2023-07-12T16:30:00Z",
+      "views": 1560,
+      "likes": 78
+    },
+    {
+      "id": 4,
+      "title": "Getting started with React in 2023",
+      "paragraph": "A comprehensive guide to beginning your journey with React in the current year.",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor. Nullam auctor, nisl eget ultricies tincidunt, nisl nisl aliquam nisl, eget ultricies nisl nisl eget nisl.",
+      "image": "/images/blog/blog-04.jpg",
+      "author": {
+        "name": "Admin User",
+        "image": "/images/blog/author-02.png",
+        "designation": "Head of Design"
+      },
+      "authorId": 1,
+      "tags": ["react", "frontend", "javascript"],
+      "publishDate": "August 5, 2023",
+      "createdAt": "2023-08-05T11:10:00Z",
+      "updatedAt": "2023-08-07T13:25:00Z",
+      "views": 2100,
+      "likes": 95
     }
   ]
 }

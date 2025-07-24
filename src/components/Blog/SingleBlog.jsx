@@ -1,18 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
 import '../../css/blog/SingleBlog.css';
 
-const SingleBlog = ({ blog }) => {
-  const { id, title, image, paragraph, author, tags, publishDate } = blog;
+const SingleBlog = ({ blog, onEdit, onDelete }) => {
+  const { user } = useAuth();
+  const { id, title, image, paragraph, author, tags, publishDate, authorId } = blog;
+  
+  const isOwner = user && user.id === authorId;
+
   return (
     <div className="blog-card">
-      <Link to={`/blog/${id}`} className="blog-image-wrapper">
+      <Link to={`/blogs/${id}`} className="blog-image-wrapper">
         <span className="tag-label">{tags[0]}</span>
         <img src={image} alt="" className="blog-image" />
       </Link>
       <div className="blog-content">
         <h3>
-          <Link to={`/blog/${id}`} className="blog-title">
+          <Link to={`/blogs/${id}`} className="blog-title">
             {title}
           </Link>
         </h3>
@@ -31,8 +36,17 @@ const SingleBlog = ({ blog }) => {
             <h4 className="date-label">Date</h4>
             <p className="date-text">{publishDate}</p>
           </div>
-          
         </div>
+        {isOwner && onEdit && onDelete && (
+          <div className="blog-actions">
+            <button 
+              onClick={() => onDelete(id)} 
+              className="delete-button"
+            >
+              Delete
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

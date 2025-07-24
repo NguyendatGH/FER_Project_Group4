@@ -23,58 +23,76 @@ import TemplatesList from "./components/TemplateForUser/TemplateList";
 import CartPage from "./components/TemplateForUser/CartPage";
 import CheckoutPage from "./components/TemplateForUser/CheckoutPage";
 import TemplateDetails from "./components/TemplateForUser/TemplateDetails";
+import { BlogProvider } from "./context/BlogContext";
+import Blog from "./components/Blog/Blog";
+import BlogForm from "./components/Blog/BlogForm";
 function App() {
-  console.log("App component rendered");
-
   return (
     <AuthProvider>
       <CartProvider>
-        <Header />
-        <Routes>
-          <Route
-            path="/admin/dashboard"
-            element={
-              <AdminRoute>
-                <AdminDashboard />
-              </AdminRoute>
-            }
-          />
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/blog" element={<BlogPage />} />
-          <Route path="/blog/:id" element={<BlogDetails />} />
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/signup-success" element={<SignUpSuccess />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/support" element={<SupportPage />} />
-          <Route path="/change-password" element={<ChangePassword />} />
-          <Route path="/not-found" element={<NotFound />} />
-          <Route path="/admin/templates" element={<TemplatesGrid />} />
-
-          <Route
-            path="/admin/templates/new"
-            element={
-              <AdminRoute>
-                <TemplateForm />
-              </AdminRoute>
-            }
-          />
-          <Route
-            path="/admin/templates/edit/:id"
-            element={
-              <AdminRoute>
-                <TemplateForm />
-              </AdminRoute>
-            }
-          />
-        <Route path="/templates" element={<TemplatesList />} />
-        <Route path="/templates/:slug" element={<TemplateDetails />} />
-        <Route path="/cart" element={<CartPage />} />
-        <Route path="/checkout" element={<CheckoutPage />} />
-        </Routes>
+        <BlogProvider>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/blogs" element={<Blog />} />
+            <Route
+              path="/blogs/new"
+              element={<BlogForm isEditMode={false} />}
+            />
+            <Route
+              path="/blogs/edit/:id"
+              element={<BlogForm isEditMode={true} />}
+            />
+            <Route path="/blogs/:id" element={<BlogDetails />} />
+            <Route path="/blog-list" element={<BlogPage />} />
+            <Route path="/signin" element={<SignIn />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/signup-success" element={<SignUpSuccess />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/support" element={<SupportPage />} />
+            <Route path="/change-password" element={<ChangePassword />} />
+            <Route path="/not-found" element={<NotFound />} />
+            <Route path="/templates" element={<TemplatesList />} />
+            <Route path="/templates/:slug" element={<TemplateDetails />} />
+            <Route path="/cart" element={<CartPage />} />
+            <Route path="/checkout" element={<CheckoutPage />} />
+            <Route
+              path="/admin/dashboard"
+              element={
+                <AdminRoute>
+                  <AdminDashboard />
+                </AdminRoute>
+              }
+            />
+            <Route
+              path="/admin/templates"
+              element={
+                <AdminRoute>
+                  <TemplatesGrid />
+                </AdminRoute>
+              }
+            />
+            <Route
+              path="/admin/templates/new"
+              element={
+                <AdminRoute>
+                  <TemplateForm />
+                </AdminRoute>
+              }
+            />
+            <Route
+              path="/admin/templates/edit/:id"
+              element={
+                <AdminRoute>
+                  <TemplateForm />
+                </AdminRoute>
+              }
+            />
+          </Routes>
+          <Footer />
+        </BlogProvider>
       </CartProvider>
-      <Footer />
     </AuthProvider>
   );
 }
